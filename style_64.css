@@ -1,0 +1,4608 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family:"Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+body::-webkit-scrollbar, #scrollDIVEmail::-webkit-scrollbar, #contentEmail::-webkit-scrollbar, #scrollDIV::-webkit-scrollbar, .fixediPad::-webkit-scrollbar, #scrollDIViPad::-webkit-scrollbar, #iPhscrollDiv::-webkit-scrollbar, #content::-webkit-scrollbar, #scrollDiv::-webkit-scrollbar, #bfix::-webkit-scrollbar, #inScroll::-webkit-scrollbar  {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+body{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	max-height: 100vh;
+	font-family: sans-serif;
+	background: #D8E5EE;
+}
+
+h1, h2, h3, h4{
+	text-align: center;
+	color: #05004d;
+}
+
+h1{
+	font-size: 1.5em;
+	padding: 0 25px;
+}
+
+h2{
+	font-size: 1.3em;
+	padding: 0 25px;
+	
+}
+
+h3{
+	font-size: 1.2em;
+	line-height: .05em;
+	padding: 0 25px;
+}
+
+h4{
+	font-size: 15px;
+	line-height: .1em;
+	padding: 0 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+p{
+	font-size: .95em;
+	text-align: left;
+	padding: 0 15px 5px 25px;
+	color: #05004d;
+}
+
+.mqCon{
+	display: none;
+}
+
+.vidStyle{
+	border-radius: 20px !important;
+}
+
+/* Nav styling start */
+.navHeader{
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	top: 0;
+	background: #D8E5EE;
+	z-index: 9999;
+	-webkit-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	-moz-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	z-index: 9;
+}
+
+.NavThird1, .NavThird2, .NavThird3{
+	position: relative;
+	width: 33.33%;
+	height: 5vh;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.headBtn{
+	width: 33.33%;
+	height: 100%;
+	align-content: center;
+	float: left;
+}
+
+.headBtnInner{
+	position: relative;
+  	top: 1.5px;
+  	left: 45.5px;
+  	width: 186px;
+  	height: 40px;
+  	align-content: center;
+  	border: #05004d solid 3px;
+  	border-radius: 25px;
+	font-size: .75em;
+	line-height: 3.5em;
+	text-align: center;
+	margin: 0 2px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+	color: #05004d;
+}
+
+.headBtnInner:hover{
+  	border: #6364ff solid 3px;
+	color: #6364ff;
+	background: #fff;
+}
+/* Nav styling end */
+
+/* Sydney setup start */
+.SydSec{
+	position: fixed;
+	width: 100%;
+	height: 80vh;
+	top: 95vh;
+	z-index: -1;
+}
+
+.Hbridge, .OH, .Back1, .Back2, .Back3, .Back4, .Back5, .Back6, .Center1, .Front1, .Front2, .Front3, .Front4, .centrepoint, .Center2, .Center3, .Sph{
+	position: fixed;
+	bottom: 4vh;
+	z-index: -1;
+	height: 55vh;
+}
+
+.Hbridge{
+	right: 6vw;
+	width: 30%;
+}
+
+.OH{
+	left: 67vw;
+	width: 30%;
+}
+
+.Back1{
+	right: 38vw;
+	width: 5%;
+}
+
+.Back2{
+	right: 43vw;
+	width: 7%;
+}
+
+.Back3{
+	right: 50vw;
+	width: 7%;
+}
+
+.Back4{
+	right: 58vw;
+	width: 7%;
+}
+
+.Back5{
+	right: 68vw;
+	width: 7%;
+}
+
+.Back6{
+	right: 85.1vw;
+	width: 5%;
+}
+
+.Center1{
+	right: 39vw;
+	width: 13%;
+}
+
+.Front1{
+	right: 33vw;
+	width: 6%;
+}
+
+.Front2{
+	right: 40.5vw;
+	width: 5%;
+}
+
+.Front3{
+	right: 46.7vw;
+	width: 5%;
+}
+
+.Front4{
+	right: 53.7vw;
+	width: 6%;
+}
+
+.centrepoint{
+	right: 64vw;
+	width: 7%;
+}
+
+.Center2{
+	right: 73.9vw;
+	width: 12.1%;
+}
+
+.Center3{
+	right: 89vw;
+	width: 11%;
+}
+
+.Sph{
+	left: 0;
+	width: 100%;
+	height: 737.75px !important;
+}
+
+/* scrim */
+.SphTop{
+	position: fixed;
+	bottom: 4vh;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	background-color: #D8E5EE;
+	opacity: .8;
+	z-index: -1;
+}
+/* Sydney setup end */
+
+.cenCon{
+ 	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+.sec1, .sec2, .sec3{
+	top: 5vh;
+	left: 0;
+	position: relative;
+	width: 33.33%;
+	height: 95vh;
+	float: left;
+}
+
+.paraInfoCon{
+	margin: 0;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.paraInfoCon2{
+	position: relative;
+	width: 100%;
+	color: #fff;
+	margin-top: 20px;
+	height: auto;
+}
+
+/* envelopeCon1 and envelopeCon2 outer envelope container */
+.envelopeCon1, .envelopeCon2{
+	left: 0;
+	position: fixed;
+	margin-top: 59vh;
+	width: 33.33%;
+	height: 460px;
+	float: left;
+	pointer-events: none;
+}
+
+/* envelopeIn1 and envelopeIn2 inner envelope container */
+.envelopeIn1, .envelopeIn2{
+	top: 0;
+	left: 190px;
+	position: absolute;
+	width: 420px;
+	height: 447px;
+}
+
+.fixedEmail{
+	margin: 0 0 0 190px;
+	height: 150vh;
+    width: 420px;
+    position: fixed;
+}
+
+#scrollDIVEmail{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 1480px;
+  	width: 420px;
+  	overflow: auto;
+  	cursor: pointer;
+  	float: left;
+}
+
+#contentEmail{
+ 	top: 70vh;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 3760px;
+ 	position: absolute;
+ 	border-radius: 15px;
+ 	float: left;
+}
+
+/* emailHeroBanner ani start */
+#emailHeroBanner{
+    animation-name: emailHeroAni;
+    animation-duration: 40s;
+	animation-iteration-count: infinite;
+    /* none / forward / backward / both */
+    animation-fill-mode: forwards ;
+}	
+	
+@keyframes emailHeroAni{
+ 0%{ 
+	background: transparent;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 16px;
+} 
+25%{ 
+	background: #6364ff;
+	backdrop-filrgba(130, 255, 253, 0.829)
+	-webkit-backdrop-filter: blur(10px);
+} 
+75%{ 
+	background: #05004d;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}            
+100%{ 
+    color: #6364ff; 
+	background: transparent; 
+} 
+	
+}
+/* emailHeroBanner ani end */
+	
+.innerVitCol{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 445px;
+	position: relative;
+	float: left;
+	z-index: 8;
+	border-radius: 20px 20px 0 0;
+	background: rgba( 216, 229, 238, 0.25 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+	-webkit-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+}
+
+.iPadlogoSec{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 180px;
+	background: transparent;
+	z-index: 1;
+}
+
+.iPadHeadingCon{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	border-radius: 20px 20px 0 0;
+	position: relative;
+	float: left;
+}
+
+.fixediPad{
+	margin: 83px 0 0 85px;
+	width: 683px;
+    position: fixed;
+}
+
+#scrollDIViPad{
+	position: absolute;
+  	top: 447px;
+  	left: 0;
+  	height: 600px;
+  	width: 683px;
+  	overflow: auto;
+  	cursor: pointer;
+  	float: left;
+}
+
+#contentiPad{
+	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	position: absolute;
+ 	border-radius: 15px;
+ 	float: left;
+}
+
+.bannerCon{
+	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 500px;
+ 	position: relative;
+	float: left;
+}
+
+/* contains iPad svg start */
+.iPadCen{
+  	margin: 78.5px 0 0 78.5px;
+  	position: relative;
+  	width: 695px;
+  	height: auto; 
+  	pointer-events: none;
+}
+/* contains iPad svg end */
+
+.iPhfixed{
+  	width: 320px;
+  	height: 770px;
+  	position: fixed;
+  	margin: 6vh 0 0 190px;
+  	border-radius: 35px;
+}
+
+.iPhHeroBanner{
+	position: relative;
+	width: 100%;
+	height: 220px;
+	margin: 20px 0 0 0;
+	border-radius: 20px;
+}
+
+/* iPhHeroBanner ani start */
+#iPhHeroBanner{
+    animation-name: iPhHeroAni;
+    animation-duration: 120s;
+	animation-iteration-count: infinite;
+    /* none / forward / backward / both */
+    animation-fill-mode: forwards ;
+}	
+	
+@keyframes iPhHeroAni{
+ 0%{ 
+	background: transparent;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 16px;
+} 
+25%{ 
+	background: #6364ff;
+	backdrop-filrgba(130, 255, 253, 0.829)
+	-webkit-backdrop-filter: blur(10px);
+} 
+50%{ 
+	background: #6364ff;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 16px;  
+} 
+75%{ 
+	background: #6364ff;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}            
+100%{ 
+    color: transparent; 
+	background: transparent; 
+} 
+	
+}
+/* iPhHeroBanner ani end */
+
+.iPhlogoSec{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 170px;
+	background: rgba( 216, 229, 238, 0.25 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+	-moz-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	z-index: 1;
+}
+
+/* iPhbtnSec contains search bar */
+.iPhbtnSec{
+	position: sticky;
+	top: 115px;
+	width: 100%;
+	height: 35px;
+	float: left;
+}
+
+/* grabberCon in QR banner start */
+.grabCon {
+	position: absolute;
+	width: 320px;
+	margin: 175px 0 0 35px;
+	padding: 0;
+}
+
+.dealCardWrapper {
+	position: relative;	
+	// Gradient side fade
+	&:grabBefore,&:grabAfter {
+		position: absolute;
+		top: 0;
+		display: block;
+		height: 100%;
+	}
+	
+	&:grabBefore {
+		left: 0;
+		background: linear-gradient(90deg, #fff, transparent);
+	}
+	
+	&:grabAfter {
+		right: 0;
+		background: linear-gradient(-90deg, #fff, transparent);
+	}
+}
+
+.dealCardCon{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0;
+	cursor: pointer;
+	background: transparent;
+		&.activeGrab {
+			cursor: grab;
+	}
+}
+
+.grabCard{
+	display: inline-block;
+	margin: 0 5px;
+	user-select: none;
+	background: transparent;
+	color: #fff;
+	width: 70px;
+	height: 90px;
+	border-radius: 11px;
+	border: 3px transparent solid;
+}
+
+.grabCard:hover{
+	border: 3px #fff solid;
+}
+/* grabberCon in QR banner end */
+
+/* search-bar for iPhone start */
+/* search-bar-div is search bar container */
+#search-bar-div{
+	position: relative;
+	width: 100%;
+	height: 35px;
+	left: 0;
+	z-index: 2;
+	text-decoration: none !important;
+	text-underline: transparent;
+}
+
+#search-bar{
+	-webkit-appearance: none;
+	width: 70%;
+	height: 35px;
+	margin: 0 0 0 31px;
+	/* padding is height of search bar */
+	padding: 12px 5px;
+	border: 3px solid #05004d;
+	border-radius: 10px;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); */
+	/* text-indent is placeholder text's styling padding values */
+	text-indent: 40px;
+	transition: width .7s ease-in-out;
+	outline: #fff;
+	text-transform: capitalize;
+	text-decoration: none !important;
+}
+
+#search-bar:hover{
+	/* width is width on hover
+	width: 200px; */
+	background: #05004d;
+	color: #fff;
+	border-radius: 10px;
+	border: 3px solid #6364ff;
+}
+
+#LinkTo{
+	width: 100px;
+	height: 10vh;
+	left: 0;
+	bottom: 0;
+	background: #00FFCC;
+}
+
+#LinkForcite{
+	width: 100px;
+	height: 10vh;
+	left: 0;
+	bottom: 0;
+	background: #3266FF;
+}
+
+.magIcon{
+	position: relative;
+	margin: -60px 0 0 38px;
+	font-size: 3em;
+	color: #6364ff;
+	padding: 10px 5px;
+	pointer-events: none;
+}
+
+/* Close icon */
+.close {
+  	position: absolute;
+  	text-align: center;
+  	margin: 25px 0 0 305px;
+  	width: 20px;
+  	height: 20px;
+  	opacity: 0.8;
+  	border-radius: 50%;
+  	border: 3px #fff solid;
+  	cursor: pointer;
+  	background: transparent;
+  	z-index: 2;
+}
+
+.close:hover {
+  	background: #05004d;
+  	border: 3px #6364ff solid;
+	color: #fff;
+}
+
+#results{
+	position: absolute;
+	width: 72%;
+	height: auto;
+	margin: 1px 0 0 31px;
+	background: #D8E5EE;
+	border-radius: 0 0 20px 20px;
+	border: 3px #fff solid;
+	padding: 20px; 
+}
+
+/* scroll container for menu buttons start */
+#resultsFix{
+	top: 0;
+	left: 0;
+	position: relative;
+  	width: 100%;
+	height: 600px;
+	overflow: scroll;
+}
+
+/* resultsScroll moving part inner */
+#resultsScroll{
+	top: 0;
+	left: 0;
+	margin-top: 30px;
+	width: 100%;
+	height: 700px;
+}
+
+.description a, .category a{
+	color: #fff !important;
+}
+
+.description:hover, .category:hover{
+	background: #fff !important;
+}
+
+.description:hover a, .category:hover a {
+	color: #6364ff !important;
+}
+/* btnMenuCon is outer container for open/close div and dropdown end */
+/* search-bar for iPhone end */
+
+/* hamburger dropdown menu for iPhone start */
+/* btnMenuCon is outer container for open/close div and dropdown */
+.btnMenuCon{
+	position: absolute;
+	top: -5px;
+	left: 320px;
+	width: 37px;
+	height: 35px;
+	align-content: center;
+	z-index: 3;
+}
+
+/* hamburger start */
+/* togMenuBtn contains HB menu lines */
+.togMenuBtn{
+	position: absolute;
+	width: auto;
+	height: 35px;
+	border: none;
+}
+
+/* menuBar is HB menu lines */
+a#hamburger .menuBar {
+  	margin: 5px 0 0 0;
+  	width: 37px;
+  	height: 8px;
+  	background: #fff;
+  	border-radius: 3px;
+}
+/* .menuBar:hover is HB menu lines hover */
+
+a#hamburger:hover .menuBar:hover{
+  	background: #6364ff;
+}
+/* hamburger end */
+
+/* menuDiv is open div containing menu grid */
+#menuDiv{
+  	position: relative;
+  	top: 21px;
+  	left: -289px;
+  	width: 321px;
+  	height: 420px;
+  	overflow: hidden;
+  	border-radius: 0 0 20px 20px;
+  	border: 3px #fff solid;
+  	z-index: 99;
+	background: #D8E5EE;
+}
+
+/* scroll container for menu buttons start */
+#menuFix{
+	top: 0;
+	left: -100px;
+	width: 340px;
+	height: 630px;
+	overflow: scroll;
+}
+
+/* menuScroll moving part inner */
+#menuScroll{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+}
+
+/* menu1 is btn style */
+.menu1{
+	width: 200px;
+	height: auto;
+	border-radius: 30px;
+	margin: 20px 0 20px 12%;
+	padding: 10px 20px; 
+	text-align: center;
+	background: #6364ff;
+	text-align: center !important;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.menu1:hover{
+	background: #fff;
+}
+
+.menu1:hover a{
+	color: #05004d !important;
+}
+
+/* btnMenuCon is outer container for open/close div and dropdown end */
+/* hamburger dropdown menu for iPhone end */
+
+/* QR banner for iPhone start */
+.qrCon{
+	margin: -20px 0 0 30.3px;
+	width: 82.4%;
+	height: 420px;
+	border: 3px #fff solid;
+	position: absolute;
+	border-radius: 0 0 20px 20px;
+	background: #d8e5ee;
+	background: rgba( 255, 255, 255, 0.26);
+	backdrop-filter: blur(9px);
+	-webkit-backdrop-filter: blur(9px);
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 4px 30px rgba(13, 0, 67, 0.1);
+	border: 3px #fff solid;
+}
+
+.qrBanner{
+	margin: 0;
+	width: 100%;
+	height: 445px;
+	position: absolute;
+	float: left;
+	border-radius: 20px;
+}
+
+.qrOuter1, .qrOuter2, .qrOuter3{
+	margin: 0;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	float: left;
+}
+
+/* emoji div */
+.qrOuter1{
+	margin: 0; 
+	width: 100%;
+	height: 40px;
+	overflow: visible;
+}
+
+.qrEmoji{
+	position: relative;
+  	font-size: 2.781em;
+	line-height: 1.3em;
+  	display: block;
+  	margin: 0 -.7vw 0 0;
+	cursor: pointer;
+}
+
+/* text div */
+.qrOuter2{
+	top: 0; 
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 110px;
+	float: left;
+}
+
+.popText{
+	top: 0;
+	left: 0;
+	position: relative;
+	text-align: center;
+}
+
+/* QR code div */
+/* QR code start */
+#QR3, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+#QRcontainer {
+	display:inline-block;
+	/* margin indicates QR code coords */
+	top: 0;
+	width: 3vw;
+	height: auto;
+	margin: auto;
+}
+
+div.QRcode {
+	border-width: 0px;
+}
+/* QR code end */
+
+/* QR close popup div */
+.popOuterx{
+	height: 25px;
+	width: 25px;
+	margin: 20px 0 0 270px;
+	position: relative;
+}
+
+.x{
+	height: 20px;
+	width: 20px;
+	border: 3px solid #fff;
+  	background-color: transparent;
+  	color: #05004d;
+  	border-radius: 2px;
+  	cursor: pointer;
+	border-radius: 50%;
+}
+
+.x:hover{
+	border: 3px solid #6364ff;
+	background-color: #fff;
+  	color: #6364ff;
+
+}
+/* QR banner for iPhone end */
+
+/* iPhscrollDiv scroll container for iPhone start */
+#iPhscrollDiv{
+  position: absolute;
+  margin: 10px 0 0 0;
+  width: 390px;
+  height: 780px;
+  overflow: auto;
+  border-radius: 50px;
+  background: rgba( 255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 45px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#iPhcontent{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2700px;
+}
+
+.iPhsubDiv{
+	position: relative;
+	width: 100%;
+	height: 125px;
+	margin: 20px 0 0 0;
+	float: left;
+}
+
+.iPhitem{
+  margin: 0 0 0 -1px;
+  padding: 6px 0 0 0;
+  width: 45px;
+  height: 30px;
+  background-color: transparent !important;
+}
+
+/* CON are body row containers for iPhone start */
+.Con1, .Con2, .Con3, .Con4, .Con5, .Con6, .Con7, .Con8, .Con9, .Con10, .Con11, .Con12, .Con13, .Con14, .Con15, .Con16, .Con17, .Con18, .Con19, .Con20, .Con21, .Con22, .Con23, .Con24, .Con25, .Con26, .Con27, .Con28{
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	height: auto;
+	float: left;
+}
+
+.spDiv{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	height: 20px;
+}
+/* CON are body row containers for iPhone end */
+
+/* METCON - contains metrics don't lie stats - start */
+.MetricCon{
+	position: relative;
+	width: 98%;
+	height: auto;
+	margin: 0;
+	float: left;
+	border-radius: 20px;
+	border: 3px #fff solid;
+}
+
+.MetricHead{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	border-radius: 20px 20px 0 0;
+}
+
+.MetGrid {
+	width: 348px;
+	height: 225px;
+  	display: grid;
+    /* grid-template-columns is width of columns */
+  	grid-template-columns: 69px 69px 69px 69px;
+    /* grid-gap is width between columns */
+  	grid-gap: 17px 17px;
+  	background-color: transparent;
+  	/* padding is padding around the outside of columns */
+  	padding: 0 0 38px 27.5px;
+}
+
+.MetGrid > div {
+  	text-align: center;
+  	/* padding is padding around text/content inside grid squares */
+  	padding: 0;
+	font-weight: 600;
+   /* height is height of grid squares */
+  	height: 62px;
+  	border-radius: 5px;
+	border: 3px #fff solid;
+}
+
+/* outer socialCon */
+.socSVGcon{
+	position: relative;
+	width: 100%;
+	height: 45%;
+	top: 0;
+	left: 0;
+	margin:  2px 0 0 0;
+	overflow: visible;
+}
+
+.num {
+  	width: 100%;
+  	margin: 0;
+  	text-align: center;
+  	color: #fff;
+  	font-weight: 600;
+  	font-size: 15px;
+  	float: left;
+}
+
+.text {
+  	width: 100%;
+ 	margin:  2px 0 0 0;
+  	text-align: center;
+  	color: #fff;
+  	font-weight: 600;
+  	font-size: 5px;
+  	float: left;
+  	background: transparent;
+}
+/* social counter style end */
+/* METCON - contains metrics don't lie stats - end */
+
+/* social/dollar counter style start */
+.sym1{
+  	position: relative;
+  	text-align: right;
+  	float: left;
+}
+
+.sym2 {
+  	position: relative;
+  	text-align: left;
+  	float: left;
+}
+/* social/dollar counter style end */
+
+.RegBtn{
+	position: absolute;
+	width: 40%;
+	height: 80%;
+	margin: 1.4% 0 0 0;
+	border-radius: 20px;
+}
+
+/* universal deal card tap iPhslider and countdown timer start */
+.Con6{
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	height: auto;
+	float: left;
+}
+
+.iPhDealSec{
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 300px;
+	left: 0;
+}
+
+.iPhcardCon{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	top: -210px;
+	left: 0;
+	float: left;
+}
+
+/* deal card container styling - deal is outer card container style */
+.iPhdeal{
+    height: 130px;
+    width: 65px;
+    border-radius: 3px;
+	margin: 5px 0 0 0 !important;
+}
+
+/* deal card */
+.iPhdeal:nth-child(odd){
+	/*border: #D8E5EE 3px solid !important;*/
+}
+
+/* deal card */
+.iPhdeal:nth-child(even) {
+	/*border: #D8E5EE 3px solid !important;*/
+}
+
+/* outer iPhslider container */
+.iPhslide{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.iPhslideIn{
+	margin: 0 5px 0 20px !important;
+    width: 220%;
+    display: flex;
+    gap: 5px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+/* phslider universal tap slider style start */
+.phinner{
+    position: relative;
+    flex-grow: 1;
+    order: 2;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.phslider{
+	width: 390px;/* width is viewing area on screen for deal cards and slider buttons */
+	height: 125px;
+	margin-left: 0; /* margin controls the button slider position in div*/
+    display: flex;
+    position: relative;
+	border-radius: 20px;
+}
+
+.next, .prev {
+	width: 26px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+	text-align: center;
+	color: #05004d;
+	cursor: pointer;
+	background: transparent;
+	height: auto;
+}
+
+.next:hover, .prev:hover {
+    color: #6364ff;
+    background: rgba( 216, 229, 238, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+}
+
+.prev {
+    order: 1;
+}
+
+.next {
+    order: 3;
+}
+
+.phitem {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+.dealCon {
+    width: 21.1%;
+    margin: 0 1.3%;
+    display: inline-block;
+}
+
+.phslider_1{
+	width: 390px;/* width is viewing area on screen for deal cards and slider buttons */
+	height: 90px !important;
+	margin-left: 0; /* margin controls the button slider position in div*/
+    display: flex;
+    position: relative;
+	border-radius: 20px;
+}
+
+/* phslider universal tap slider style start */
+.phinner1{
+    position: relative;
+    flex-grow: 1;
+    order: 2;
+    overflow: hidden;
+    white-space: nowrap;
+	height: 93px !important;
+}
+
+.dealCon2 {
+    width: 21.1%;
+    margin: 0 1.3%;
+    display: inline-block;
+	height: 90px;
+}
+
+.active {
+    position: relative;
+    display: block;
+}
+
+.phitem-next,.phitem-prev {
+    top: 0;
+    display: block;
+}
+
+.phitem-next {
+    left: 100%;
+}
+
+.phitem-prev {
+    left: -100%;
+}
+
+.phitem-left {
+    animation: slideInLeft 1s forwards;
+}
+
+.phitem-right {
+    animation: slideInRight 1s forwards;
+}
+
+.phactive-left {
+    animation: slideOutLeft 1s forwards;
+}
+
+.phactive-right {
+    animation: slideOutRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+    from {left:100%;}
+    to {left:0;}
+}
+
+@keyframes slideInRight {
+    from {left:-100%;}
+    to {left:0;}
+}
+
+@keyframes slideOutLeft {
+    from {left:0;}
+    to {left:-100%;}
+}
+
+@keyframes slideOutRight {
+    from {left:0;}
+    to {left:100%;}
+}
+/* phslider tap slider style end */
+
+/* counter start */
+:root{
+  --smaller: .75;
+}
+
+.container{  
+  	width: 40px;
+  	height: 5px;
+  	margin: 4px 0 0 -3px;
+  	text-align: center;
+  	border: #fff 3px solid;
+  	border-radius: 3px; 
+}
+
+/* countdown to deal close heading */
+h4{
+  	color: #05004d;
+  	font-weight: normal;
+  	font-size: 1em;
+  	text-transform: uppercase;
+}
+
+/* counter text */
+li{
+  	width: 20%;
+  	height: auto;
+  	color: #05004d; 
+  	display: block;
+  	float: left;
+  	list-style-type: none;
+  	padding: 0 .5px .5px .5px;
+  	text-transform: uppercase;
+}
+
+/* counter numbers */
+li span{
+  	display: flex;
+}
+
+.dClose{
+	font-weight: 200;
+	font-size: 1.5em;
+	color: #01FF44;
+}
+
+.emoDcon, .emoDconMQ{
+  	width: 100%;
+  	height: 20px;
+  	margin: -4px 0 0 0;
+}
+
+/* phslider tap slider1 counters style start */
+.timCond, .timConf, .timConff, .timCons, .timConnh, .timConv, .timConse, .timConsa, .timConp, .timCony, .timContt, .timCondMQ, .timConfMQ, .timConffMQ, .timConsMQ, .timConnhMQ, .timConvMQ, .timConseMQ, .timConsaMQ, .timConpMQ, .timConyMQ, .timConttMQ{  
+  	width: 100%;
+  	height: 27px;
+  	margin: -1px 0 0 -3px;
+  	text-align: center;
+  	border: #fff 3px solid;
+  	border-radius: 3px;
+  	background-color: #f6f7f4;
+}
+
+/* countdown to deal close heading */
+#headlined, #headlinef, #headlines, #headlinenh, #headlinev, #headlinese, #headlinesa, #headlinep, #headliney, #headlinett, #headlinedMQ, #headlinefMQ, #headlinesMQ, #headlinenhMQ, #headlinevMQ, #headlineseMQ, #headlinesaMQ, #headlinepMQ, #headlineyMQ, #headlinettMQ{
+  	margin: 3.5px 0 2px 0;
+  	color: #05004d;
+  	font-weight: 600;
+  	text-transform: uppercase;
+}
+
+/* countdown number styling */
+#daysd, #hoursd, #minutesd, #secondsd, #daysf, #hoursf, #minutesf, #secondsf, #daysff, #hoursff, #minutesff, #secondsff, #dayss, #hourss, #minutess, #secondss, #daysnh, #hoursnh, #minutesnh, #secondsnh, #daysv, #hoursv, #minutesv, #secondsv, #daysse, #hoursse, #minutesse, #secondsse, #dayssa, #hourssa, #minutessa, #secondssa, #daysp, #hoursp, #minutesp, #secondsp, #daysy, #hoursy, #minutesy, #secondsy, #daystt, #hourstt, #minutestt, #secondstt,
+#daysdMQ, #hoursdMQ, #minutesdMQ, #secondsdMQ, #daysfMQ, #hoursfMQ, #minutesfMQ, #secondsfMQ, #daysffMQ, #hoursffMQ, #minutesffMQ, #secondsffMQ, #dayssMQ, #hourssMQ, #minutessMQ, #secondssMQ, #daysnhMQ, #hoursnhMQ, #minutesnhMQ, #secondsnhMQ, #daysvMQ, #hoursvMQ, #minutesvMQ, #secondsvMQ, #daysseMQ, #hoursseMQ, #minutesseMQ, #secondsseMQ, #dayssaMQ, #hourssaMQ, #minutessaMQ, #secondssaMQ, #dayspMQ, #hourspMQ, #minutespMQ, #secondspMQ, #daysyMQ, #hoursyMQ, #minutesyMQ, #secondsyMQ, #daysttMQ, #hoursttMQ, #minutesttMQ, #secondsttMQ
+{
+	margin: 0 .7px;
+	width: 14px;
+	height: auto;
+	color: #6364ff;
+	background-color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 6px;
+	float: left;
+}
+
+/* days, hours, minutes, seconds text styling */
+.daysd, .hoursd, .minutesd, .secondsd, .daysf, .daysff, .hoursf, .minutesf, .secondsf, .dayss, .hourss, .minutess, .secondss, .daysnh, .hoursnh, .minutesnh, .secondsnh, .daysv, .hoursv, .minutesv, .secondsv, .daysse, .hoursse, .minutesse, .secondsse, .dayssa, .hourssa, .minutessa, .secondssa, .daysp, .hoursp, .minutesp, .secondsp, .daysy, .hoursy, .minutesy, .secondsy, .daystt, .hourstt, .minutestt, .secondstt,
+.daysdMQ, .hoursdMQ, .minutesdMQ, .secondsdMQ, .daysfMQ, .daysffMQ, .hoursfMQ, .minutesfMQ, .secondsfMQ, .dayssMQ, .hourssMQ, .minutessMQ, .secondssMQ, .daysnhMQ, .hoursnhMQ, .minutesnhMQ, .secondsnhMQ, .daysvMQ, .hoursvMQ, .minutesvMQ, .secondsvMQ, .daysseMQ, .hoursseMQ, .minutesseMQ, .secondsseMQ, .dayssaMQ, .hourssaMQ, .minutessaMQ, .secondssaMQ, .dayspMQ, .hourspMQ, .minutespMQ, .secondspMQ, .daysyMQ, .hoursyMQ, .minutesyMQ, .secondsyMQ, .daysttMQ, .hoursttMQ, .minutesttMQ, .secondsttMQ{
+	width: 25%;
+	margin: 1.8px 0 0 -.5px;
+	text-align: center;
+	height: auto;
+	font-size: 3px;	
+	font-weight: 600;
+	color: #05004d;
+	float: left;
+}
+
+.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt, .emojidMQ, .emojifMQ, .emojiffMQ, .emojisMQ, .emojinhMQ, .emojivMQ, .emojiseMQ, .emojisaMQ, .emojipMQ, .emojiyMQ, .emojittMQ{
+  	display: none;
+}
+
+.emojid, .emojif,.emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt, .emojidMQ, .emojifMQ,.emojiffMQ, .emojisMQ, .emojinhMQ, .emojivMQ, .emojiseMQ, .emojisaMQ, .emojipMQ, .emojiyMQ, .emojittMQ span{
+  	font-size: .5em;
+  	padding: 2px;
+}
+/* phslider tap slider1 counters style end */
+
+/* deal card grabber slider and counter style start */
+/* deal card grabber slider style start */
+.cardCon{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	margin: 80px 0 0 0;
+}
+
+/* deal card container styling - deal is outer card container style */
+.deal {
+    height: 85px;
+    width: 90px;
+    border-radius: 3px;
+	box-shadow: 1px 2px 5px .1px rgba(0, 0, 0, 0.15);
+	background-color: transparent;
+}
+
+/* d1Hero - banner svg container */
+.d1Hero{
+	top: 0;
+	left: 0;
+	margin: -3px 0 0 -2.4px;
+	width: 64px;
+	height: auto;
+	justify-content: center;
+	border: 3px #fff solid;
+    border-radius: 3px;	
+	box-shadow: 1px 2px 5px .1px rgba(0, 0, 0, 0.15);
+}
+
+.d1Hero:hover{
+	border: 3px #6364ff solid;
+}
+
+/* d1Hero - banner image container */
+.d1HeroImage{
+	top: 0;
+	left: 0;
+	margin: -3px 0 0 -3px;
+	height: auto;
+	justify-content: center;
+}
+
+/* banner image */
+.heroH{
+	width: 63px;
+	justify-content: center;
+	height: auto;
+	border: #fff 3px solid;
+	border-radius: 3px;
+	box-shadow: 1px 2px 5px .1px rgba(0, 0, 0, 0.15);
+}
+
+.heroH:hover{
+	width: 59px;
+	margin: 1px 0 0 2.9px;
+}
+
+/* type of raise eg Retail - container */
+.RetCon{
+	position: absolute;
+	margin: 27.5px 0 0 -1px;
+	width: 1vw;
+	height: 9px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+/* type of raise eg Retail - text and button style */
+.retail{
+	width: 100%;
+	height: 100%;
+	margin: 1px 0 0 -2px;
+	font-size: 6px;
+	text-align: center;
+	color: #6364ff;	
+}
+
+/* brand logo CONTAINER - deal card EXAMPLE */
+/* brand logo on deal card EXAMPLE */
+.d1Logo{
+	padding: 0;
+	justify-content: center;
+}
+
+.d1LogCon{
+	margin: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.dLogIn{
+	position: relative;
+	width: 33.33%;
+	height: 20px;
+	float: left;
+}
+
+/* brand's text container */
+.mTitle{
+	width: 100%;
+	text-align: center;
+}
+
+/* brand's name - title text */
+.title{	
+	width: 100%;
+	text-align: center;
+	line-height: 1em;
+	font-size: .5em;
+	color: #05004d;
+	height: auto;
+	margin: 3px auto auto auto !important;
+	background: #fff !important;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+/* brand's name - title text */
+.title:hover{ 
+	color: #fff;
+	background: #6364ff !important;
+}
+
+/* brand's description text */
+.des{
+	margin: 3px 0;
+	width: 100%;
+	text-align: center;
+	line-height: 1em;
+	font-size: .4em;
+	color: #05004d;
+}
+
+/* deal card */
+.deal:nth-child(odd) {
+    background-color: #fff !important;
+	border: #fff 3px solid !important;
+}
+
+/* deal card */
+.deal:nth-child(even) {
+    background-color: #fff !important;
+	border: #fff 3px solid !important;
+}
+
+/* footer buttons start */
+.iPhbtnFoot{
+	position: sticky;
+	top: 0;
+	width: 20%;
+	height: 55px;
+	float: left;
+}
+
+.ftBtnCon{
+	position: relative;
+	width: 84%;
+	height: 100%;
+	top: 0;
+	margin-left: 31px;
+}
+
+.iPhbtnf1, .iPhbtnf2, .iPhbtnf3, .iPhbtnf4, .iPhbtnf5{
+	position: absolute;
+	width: 85%;
+	height: 30px;
+	background-color: #D8E5EE;
+	border: 3px solid #05004D;
+	border-radius: 25px;
+	top: 0;
+	left: 1.5px;
+	text-align: center;
+	color: #05004D;
+	line-height: 2.9em;
+	font-size: .65em;
+}
+
+.ftSocCon{
+	position: relative;
+	width: 85%;
+	height: 100%;
+	top: 0;
+	margin: auto;
+}
+
+.iPhbtnf1:hover, .iPhbtnf2:hover, .iPhbtnf3:hover, .iPhbtnf4:hover, .iPhbtnf5:hover{
+	-webkit-box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+	-moz-box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+	box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+}
+/* footer buttons end */
+
+/* social icons start */
+.ph1Social1, .ph1Social2, .ph1Social3, .ph1Social4{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 81.5px;
+	height: 78px;
+	float: left; 
+}
+/* social icons end */
+
+/* publication logo svgs for animated footer auto slider start */
+#pubSlide{
+	width: 100%;
+	height: 70px;
+	position: relative;
+}
+
+#pubSlide > * {visibility: hidden; position: absolute;
+  	top: 0; left: 0; animation: 20s autoplay1 infinite}
+
+@keyframes autoplay1 {
+  	0% {visibility: visible}
+  	20% {visibility: hidden}
+}
+
+#pubSlide > *:nth-child(1) {animation-delay: 0s}
+#pubSlide > *:nth-child(2) {animation-delay: 4s}
+#pubSlide > *:nth-child(3) {animation-delay: 8s}
+#pubSlide > *:nth-child(4) {animation-delay: 12s}
+#pubSlide > *:nth-child(5) {animation-delay: 16s}
+
+.SVGcon1, .SVGcon2, .SVGcon3, .SVGcon4, .SVGcon5{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 390px;
+	height: 100px;
+	float: left; 
+}
+/* publication logo svgs for animated footer auto slider start */
+
+.iPhsvg{
+	width: 445px;
+    height: 770px;
+	z-index: 2;
+	position: absolute;
+	margin: -12px 0 0 -22px;
+	pointer-events: none;
+}
+/* iPhone style end */
+
+/* Vitable banner start */
+.vitbanner{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 157px;
+	float: left;
+	background: transparent !important;
+}
+
+.vitSlides::-webkit-scrollbar, .vitableSlider::-webkit-scrollbar{
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  	scrollbar-width: none; /* for Firefox */
+  	overflow-y: scroll; 
+  	display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* vitable banner container */
+.MoBanCon{
+	position: relative;
+	margin: .7vh 0 0 4.4vw;
+	width: 450px;
+	height: 152px;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+	background: #fff;
+}
+
+/* contains vitable banner content */
+.MoBanConIn{
+	position: absolute;
+	width: 420px;
+	height: 125px;
+	margin: 14px 12.5px 0 15px;
+}
+
+/* vitable logo container */
+.MoBan1{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.MoBan2{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.MoBan3{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.scratchPanOv{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.leafDecal{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+scratchie{
+	display: flex;
+	position: absolute;
+	align-content: center;
+	/*eraser size*/
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 10%;
+	pointer-events: none;
+	background-image: url(https://lisagraph.github.io/ScratchBottom2/ScratchBottom2.png);
+	background-size: 4.2vw auto;
+	/* x% y% - The x value is the horizontal position y value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If only 1 value is specified, the other value will be 50%. Default value is: 0% 0% */
+	background-position: 10% 12% !important; 
+}
+
+.arrow{
+	margin: 103px 0 0 -5px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+
+.vitableBtnDiv{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+}
+
+.cartBtn a{
+	text-decoration: none;
+}
+
+.cartBtn{
+	left: 10px;
+	width: 64px;
+	height: 24px;	
+	position: relative;
+	z-index: 5;
+	border-radius: 25px;
+	background: transparent;
+	border: 2px #697b5d solid;
+	color: #ACCC97;
+	font-size: 8px;
+	text-align: center;	
+}
+
+.cartBtn:hover{
+	left: 10px;
+	width: 64px;
+	height: 24px;
+	position: relative;
+	z-index: 5;
+	border-radius: 25px;
+	background: transparent;
+	border: 2px #ACCC97 solid;
+	background: transparent;
+	color: #ACCC97;
+}
+
+/* slide container - contains numbers and slides */
+.vitableSlider { 
+  	position: relative;
+  	width: 100%;
+  	text-align: center;
+  	overflow: hidden;
+}
+
+/* slide container */
+.vitSlides {	
+  	width: 84px;
+  	height: 85px;
+  	margin: 31.5px 0 0 168.5px;
+  	display: flex;
+  	overflow-x: auto;
+  	scroll-snap-type: x mandatory;
+  	scroll-behavior: smooth;
+  	-webkit-overflow-scrolling: touch;
+  	scroll-snap-points-x: repeat(10px);
+  	scroll-snap-type: mandatory;
+}
+
+/* slide styling */
+.vitSlides > div {
+  	margin: 0 0 0 9px;
+  	scroll-snap-align: start;
+  	flex-shrink: 0;
+  	width: 84px;
+  	height: 85px;
+  	border-radius: 10px;
+  	/*background: #00FFB4;*/
+  	transform-origin: center center;
+  	transform: scale(1);
+  	transition: transform 0.5s;
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	font-size: 50px;
+}
+
+/* blurred edges for slide container */
+.slidOver{
+	position: absolute;
+	width: 63px;
+  	height: 80px;
+  	top: 0; 
+	left: 154.5px;
+	border: 25px #fff solid;
+	filter: blur(5px);
+  	-webkit-filter: blur(5px);
+}
+
+/* transform: scale minimises slides instead of scrolling them
+.vitSlides > div:target {
+transform: scale(0.8);
+} */
+
+.vitImg {
+  	object-fit: cover;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+/* number vitableSlider buttons style */
+.vitableSlider > a {
+  	display: inline-flex;
+  	width: auto;
+  	height: 8px;
+  	font-size: 4.72px;
+  	background: #697b5d;
+  	text-decoration: none;
+  	align-items: center;
+  	justify-content: center;
+  	border-radius: 20px;
+  	color: #fff;
+  	position: relative;
+  	z-index: 3;
+}
+
+/* top is distance from the top that number button bounces when clicked */
+.vitableSlider > a:active {
+  	top: 1px;
+  	color: #697b5d;
+}
+
+/* background is colour of number button when clicked */
+.vitableSlider > a:focus {
+  	background: #ACCC97;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .vitableSlider > a {
+   display: none;
+  }
+}
+
+/* scratchie start */
+.scratchSec{
+	width: 5vw;
+	height: 35vh;
+	margin: 0;
+	background-blend-mode: difference;
+	background: transparent;
+	overflow: hidden;	
+	pointer-events: none;
+	z-index: 5 !important;
+}
+
+span{
+	/* background-size of graphic */
+	background-size: 3.6vh !important;
+	width: 210px !important;
+	height: 110px !important;
+	margin: 0 0 0 50px;
+	/* set background colour to see size of bg around graphic 
+	background-color: #000;*/
+	display: flex;
+	position: absolute;
+	align-content: center;
+	/*eraser size*/
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+	border-radius: 10%;
+	pointer-events: none;
+	background-image: url(https://lisagraph.github.io/SctrachTop2/ScratchTop2.png);
+	background-image: contain !important;
+    background-size: contain;
+	/* x% y% - The x value is the horizontal position y value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If only 1 value is specified, the other value will be 50%. Default value is: 0% 0%. Control position of discount code graphic */
+	background-position: 52.48% 28.14%;
+	/* clip-path: polygon(0% 0%, 50.9% 0%, 49.1% 99.8%, 0% 100%); */
+	z-index: 10;
+}
+
+/* contains numbers and image vitableSlider */
+.MoBanConIn2{
+	position: absolute;
+	width: 420px;
+	height: 125px;
+	margin: 14px 12.5px 0 15px;
+	background: transparent;
+}
+/* Vitable MoBanCon end */
+
+/* eGotU banner start */
+.mobMRECeGot{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	align-content: center;
+	margin: 25px 0 0 4.4vw;
+	background-color: #05004d;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+}
+
+.MRECheadeGot, .MRECseceGot{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	float: left;
+	background-color: transparent;
+	z-index: 5;
+	pointer-events: none;
+}
+
+.gotStartup{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	top: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.MRECin1eGot, .MRECin2eGot, .MRECin3eGot{
+	position: relative;
+	height: 265px;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.MRECin1eGot{
+	width: 30%;
+	background-color: transparent;
+}
+
+.MRECin2eGot{
+	width: 40%;
+	background-color: transparent;	
+}
+
+.MRECin3eGot{
+	width: 30%;
+	background-color: transparent;
+}
+
+/* globe gif containers start */
+/* GlobeCon is lightglobe and Earth gif container */
+.GlobeCon{
+	position: absolute;
+	width: 100%;
+	height: 225px;
+	top: -220px;
+	left: 0;
+	float: left;
+}
+
+/* globeGifCon Earth gif container */
+.globeGifCon{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+/* GlobeOver is blur over Earth overlay - Earth's atmosphere rep */
+.GlobeOver{
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	margin: 28px 0 0 50px;
+	float: left;
+	border: 7px solid #34FBFF;
+	border-radius: 50%;
+	opacity: .88;
+	filter: blur(3px);
+  	-webkit-filter: blur(3px);
+}
+/* globe gif containers end */
+
+/* switch containers start */
+.eGotSwitch{
+	position: relative;
+	width: 25%;
+	height: 75px;
+	margin-bottom: 0 !important;
+	left: 0;
+	float: left;
+	background-color: transparent;
+	z-index: 4;
+}
+
+/* off switch container */
+#switchBtn{
+	position: absolute;
+	margin: -21px 0 0 54px;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+}
+
+/* this is the div container that opens from switchBtn */
+#switchD{
+	position: absolute;
+	width: 182px;
+	height: 225px;
+	overflow: hidden;
+	margin: -2px 0 0 -180px;
+	overflow: visible !important;
+	float: left;
+}
+
+/* lightOff is the unlit globe svg div container */
+.lightOff{
+	position: relative;
+	width: 100%;
+	height: 260px;
+	margin: -220px 0 0 0;
+	float: left;	
+	background-color: transparent;
+}
+
+/* this is blur glow overlay 2 - blue blurred 'lamp' circle that opens on lightswitch click */
+.GlobeOver2{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin: -240px 0 0 -110px;
+	border-radius: 50%;
+	opacity: .3;
+	filter: blur(8px);
+  	-webkit-filter: blur(8px);
+	background-color: #6364ff;	
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* contains 'on switch' svg */
+.ONbtn{
+	position: absolute;
+	margin: -218px 0 0 237px;
+	width: 45px;
+	height: 45px;
+    background: #F2FF00;
+	border-radius: 10%;
+	background-color: transparent;	
+	pointer-events: none;
+}
+/* switch containers end */
+
+.industryCon{
+	width: 450px;
+	height: 450px;
+	margin: -242px 0 0 -136px;
+	position: absolute;
+	float: left;
+	pointer-events: none;
+}
+
+/* Reg button containers start */
+.MRECRegConeGot{
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	height: 45px;
+	top: 81%;
+	left: 0;
+	float: left;
+	background-color: transparent;
+	z-index: 6;
+}
+
+.regBtneGot{
+	position: relative;
+	width: 90%;
+	height: 40px;
+	border-radius: 25px;
+	text-align: center;
+	background: #6364ff;
+	font-weight: 600;
+	letter-spacing: 4px;
+	line-height: 2.7em;
+	border: 3px #6364ff solid
+}
+
+.regBtneGot:hover{
+	background: transparent;
+	border: 3px #fff solid;
+}
+/* Reg button containers end */
+
+.eGotYou{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.MRECeGotfootCon{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	float: left;
+	background-color: transparent;
+}
+
+.disCon{
+	position: relative;
+	width: 450px;
+	height: 50px;
+	bottom: 5px;
+	left: 0;
+	float: left;
+}
+
+.disInner{
+	position: relative;
+	width: 425px;
+	height: 40px;
+	top: 5px;
+	left: 12.5px;
+	float: left;
+}
+
+.disLogo{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.disPara{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: left;
+	font-size: 8px;
+	color: #fff;
+}
+
+#CSFlink, #RWlink{
+	background-color: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/* eGotU banner end */
+
+/* tbh banner start */
+.mobMREC{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	align-content: center;
+	margin: 20px 0 0 4.4vw;
+	background-color: #ffe0d9;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+}
+
+.MREChead{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	float: left;
+	background-color: transparent;
+	z-index: 3;
+}
+
+.MREChead1, .MREChead2, .MREChead3{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	float: left;
+	z-index: 3;
+}
+
+.MREChead1{
+	background-color: transparent;
+	width: 30%;
+}
+
+.MREChead2{
+	background-color: transparent;
+	width: 40%;
+	overflow: visible;
+}
+
+.MREChead3{
+	background-color: transparent;
+	width: 30%;
+}
+
+.MRECcta{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	align-content: center;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.MRECin1, .MRECin2, .MRECin3{
+	position: relative;
+	height: 290px;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.MRECin1{
+	width: 30%;
+	background-color: transparent;
+}
+
+.MRECin2{
+	width: 40%;
+	background-color: transparent;	
+}
+
+.MRECin3{
+	width: 30%;
+	background-color: transparent;
+}
+
+.MRECslider{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.MRECRegCon{
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	height: 45px;
+	bottom: -239px;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.regBtn{
+	position: relative;
+	width: 70%;
+	height: 45px;
+	border-radius: 25px;
+	text-align: center;
+	background-color: #6364ff;
+	font-weight: 600;
+	letter-spacing: 3px;
+	line-height: 2.8em;
+	color: #fff;
+}
+
+.MRECellipse{
+	position: absolute;
+	width: 210px;
+	height: 210px;
+	align-content: center;
+	margin: 104px 120px 0 120px;
+	border-radius: 50%;
+	border: 3px #fff solid;
+	background-color: transparent;
+	opacity: .6;
+	pointer-events: none;
+	z-index: 3;
+}
+
+.TBHslider {
+  	position: absolute;
+  	top: 25.1%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 450px;
+  	height: 140px;
+  	background-color: transparent;
+	z-index: 3;
+}
+
+.TBHwrapper {
+  	overflow: hidden;
+  	position: relative;
+  	background: transparent;
+  	z-index: 1;
+}
+
+#TBHitems {
+  	width: 10000px;
+  	position: relative;
+  	top: 0;
+  	left: -450px;
+}
+
+#TBHitems.shifting {
+  	transition: left .2s ease-out;
+}
+
+.TBHslide {
+  	width: 450px;
+  	height: 216px;
+  	top: 0;
+  	cursor: pointer;
+  	float: left;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	transition: all 1s;
+  	position: relative;
+  	background: transparent;
+}
+
+.TBHcontrol {
+  	position: absolute;
+  	top: 50%;
+  	width: 5px;
+  	height: 5px;
+  	margin: 25px 0 0 30px;
+  	border: 3px #fff solid;
+  	border-radius: 20px;
+  	opacity: .6;
+  	z-index: 2;
+}
+
+.TBHcontrol:hover {
+  	background: transparent;
+  	width: 5px;
+  	height: 5px;
+  	border-radius: 24px;
+  	border: 3px #FF596C solid;
+  	z-index: 2;
+}
+
+.TBHprev, .TBHnext {
+  	background-size: 22px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	cursor: pointer;
+}
+
+.TBHprev {
+  	left: 60px;
+}
+
+.TBHnext {
+  	right: 85px;
+}
+
+.TBHprev:active, .TBHnext:active {
+  	transform: scale(0.9);
+}
+
+.MRECfoot{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	float: left;
+	background-color: transparent;
+}
+
+.TBHdisCon{
+	position: absolute;
+	width: 100%;
+	height: 52px;
+	bottom: 3px;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.TBHdisSVG{
+	position: absolute;
+	width: 100%;
+	height: 52px;
+	bottom: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+#disCon a{
+	background-color: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#CSFlink, #RWlink{
+	background-color: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/* tbh banner end */
+
+/* cookie tracking banner style start */
+#cookiePopup{
+	background: rgba( 216, 229, 238, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+  	position: fixed;
+  	width: 100vw;
+  	height: 8vh;
+  	font-family: "Poppins", sans-serif;
+  	text-align: center;
+  	margin: 0;
+  	transition: all 1s ease-in;
+  	text-decoration: none;
+	z-index: 50000;
+}
+
+.cookie1{
+	position: relative;
+	width: 35%;
+	height: 8vh;
+	align-content: center;
+	float: left;
+}
+
+.cookie2{
+	position: relative;
+	width: 30%;
+	height: 8vh;
+	align-content: center;
+	float: left; 
+}
+
+.cookie3{
+	position: relative;
+	width: 35%;
+	height: 8vh;
+	float: left;
+}
+
+#cookiePopup p{
+	text-align: center;
+	color: #05004d;
+  	width: auto;
+  	padding: 5px;
+	margin: 10px 0 0 0;
+}
+
+.cookiePopup{
+  	border-radius: 10px;
+}
+
+.acceptCookie{
+  	width: auto;
+  	height: auto;
+  	position: relative;
+	padding: 0;
+	color: #fff;
+	background-color: #6364ff;
+	border: 3px solid #05004d;
+	border-radius: 25px;
+  	cursor: pointer;
+}
+
+.acceptCookie:hover{
+	color: #05004d;
+	background-color: #fff; 
+	border: 3px solid #6364ff;
+  	cursor: pointer;
+}
+
+/* cookie close button outer container */
+.cookieClzOut{
+  position: relative;
+  top: 13px;
+  left: 0;
+  width: 100%;
+  height: 23px;
+  float: left;
+}
+
+/* cookie close button style */
+.cookieClzCon{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  margin: 0 0 0 10px;
+  text-decoration: none;
+}
+
+.cookieHide{
+	visibility: hidden;
+	bottom: 0;
+	right: 0;
+}
+
+.cookieShow{
+	visibility: visible;
+	bottom: 5vh;
+	right: 0;
+}
+
+/* cookie close button - 'x' style */
+#cookiePopup a{
+	color: #05004d;
+}
+
+#cookiePopup a:hover{
+	color: #6364ff;
+}
+/* cookie tracking banner style end */
+
+.navFooter{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5vh;
+	background: #D8E5EE;
+	z-index: 60000;
+	-webkit-box-shadow: 8px 0 0 0 rgba(5,0,77,0.37);
+	-moz-box-shadow: 8px 0 0 0 rgba(5,0,77,0.37);
+	box-shadow: 8px 0 0 0 rgba(5,0,77,0.37);
+	box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+	-webkit-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+	-moz-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+}
+
+.iPhbtn1, .iPhbtn2, .iPhbtn3, .iPhbtn4, .iPhbtn5{
+	position: absolute;
+	width: 75%;
+	height: 30px;
+	background-color: #D8E5EE;
+	border: 3px solid #8F8F8F;
+	border-radius: 25px;
+	top: -10px;
+	left: 7.5px;
+	right: 20px;
+	text-align: center;
+	color: #8F8F8F;
+	line-height: 2.1em;
+	font-size: .85em;
+}
+
+.iPhbtn1:hover, .iPhbtn2:hover, .iPhbtn3:hover, .iPhbtn4:hover, .iPhbtn5:hover{
+	-webkit-box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+	-moz-box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+	box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+}
+
+.monFooter{
+	top: -33px;
+ 	left: 63%;
+	margin: 0;
+ 	width: 70px;
+	height: 70px;
+ 	position: absolute;
+}
+
+@media screen and (max-width: 1920px){
+    
+html{
+	width: 1920px !important;
+}
+		
+body{
+	position: relative;
+	width: 1920px;
+}
+	
+.navHeader{
+	height: 6vh;
+}
+	
+.headBtnInner{
+	margin-top: 8px !important;
+	top: 0;
+	left: 8px;
+}
+		
+.sec1, .sec2, .sec3{
+	top: 5vh;
+	left: 0;
+	position: relative;
+	width: 33.33%;
+	height: 100vh;
+	float: left;
+}
+		
+.fixedEmail{
+	margin: 0 0 0 120px;
+}
+	
+#scrollDIVEmail{
+	height: 1450px;
+	width: 420px;
+}
+	
+#contentEmail{
+	top: 50vh;
+	height: 4050px;
+}
+		
+/* envelopeCon1 and envelopeCon2 outer envelope container */
+.envelopeCon1, .envelopeCon2{
+	margin: 0 0 0 120px;
+	width: 420px;
+	height: 460px;
+	bottom: 4vh !important;
+}
+	
+.envelopeIn1, .envelopeIn2{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	width: 420px;
+	height: 447px;
+}
+
+/* iPadCen is container for iPad svg */ 
+.iPadCen{
+	position: fixed;
+	margin: 20px 0 0 30px;
+	display: block;
+	width: 580px;
+	height: auto;
+}
+	
+.iPadlogoSec{
+	width: 100%;
+	margin: 0;
+	height: 120px;
+}
+	
+.innerVitCol{
+	top: 70px;
+	height: 380px;
+	background: transparent;
+}
+	
+/* EqLogoSVG is iPad logo for iPad */   
+.EqLogoSVG{
+	margin: 10px 0 0 50px;
+	width: 480px;
+	height: 120px;
+}
+	
+.fixediPad{
+	top: 0;
+	margin: 0 0 0 30px;
+	width: 580px;
+	height: auto;
+}
+		
+#scrollDIViPad{
+	width: 580px;
+	height: 500px;   
+}
+		
+#contentiPad{
+	top: 0;
+	height: 1000px;
+}
+	
+.iPadHeading{
+	margin-left: 65px !important;
+	background: rgba( 216, 229, 238, 0.25 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+}
+	
+/* Vitable banner start */
+.vitbanner{
+	height: 157px;
+	background: transparent !important;
+}
+	
+/* banner margins in iPad start */
+.MoBanCon{
+	margin: 0 0 0 3.4vw;
+}
+	
+/* eGotU banner start */
+.mobMRECeGot{
+	margin: 25px 0 0 3.4vw;
+}
+	
+.mobMREC{
+	margin: 25px 0 0 3.4vw;
+}
+/* banner margins in iPad end */
+	
+/* iPhone style start */
+.iPhfixed{
+	width: 320px;
+	height: 770px;
+	position: fixed;
+	margin: 3vh 0 0 100px;
+	border-radius: 35px;
+	}
+	
+.iPhlogoSec{
+	height: 170px;
+}
+
+.qrBanner{
+	height: 555px;
+}
+
+#QRcontainer{
+    margin: 0 !important;
+	width: auto !important;
+	left: 0 !important;
+}
+	
+/* EqLogoPhSVG is iPh logo for iPh */
+.EqLogoPhSVG{
+	margin: 0 0 0 45px;
+	width: 300px;
+}
+
+.phinner{
+	margin-top: 0 !important;
+	height: 150px;
+}
+
+.iPhdeal{
+	margin-top: 0 !important;
+}
+
+.dealCon{
+	margin-top: 5px !important;
+}
+
+.next, .prev{
+	height: auto !important;
+}
+
+.monFooter{
+ 	left: 62%;
+}
+
+#cookiePopup{
+	bottom: 3.5vh !important;
+	height: 150px;
+}
+	
+}
+
+@media screen and (max-width: 1764.95px){
+		
+html{
+	width: 1764.95px !important;
+	max-height: 100vh;
+}
+		
+body{
+	position: relative;
+	width: 1764.95px;
+}
+	
+.navHeader{
+	height: 20px;
+}
+	
+.headBtnInner, .headBtn{
+	height: 16px;
+	line-height: .5em;
+}
+	
+.headBtnInner{
+	width: 75%;
+}
+		
+.sec1, .sec3{
+	width: 30%;
+	height: 100vh;
+	top: 5vh;
+	left: 0;
+	position: relative;
+	float: left;
+}
+		
+.sec2{
+	width: 40%;
+	height: 100vh;
+	top: 5vh;
+	left: 0;
+	position: relative;
+	float: left;
+}
+
+.cenCon{
+	width: 100%;
+}
+		
+.fixedEmail{
+	margin: 0 0 0 40px;
+}
+		
+/* envelopeCon1 and envelopeCon2 outer envelope container */
+.envelopeCon1, .envelopeCon2{
+	display: block;
+	left: 0;
+	margin-left: 40px;
+	position: fixed;
+	bottom: 3vh !important;
+}
+	
+.iPhScrollDiv{
+	top: 0;
+	margin: 0;
+}
+		
+/* iPadCen is container for iPad svg */ 
+.iPadCen{
+	position: fixed;
+	top: 0;
+	margin: 22px 0 0 20px;
+	display: block;
+	width: 525px;
+	height: auto;
+}
+		
+.fixediPad{
+	margin: 0 0 0 20px;
+	width: 525px;
+	height: 200px;
+}
+		
+#scrollDIViPad{
+	top: 0;
+	margin: 0;
+	width: 525px;
+	height: 815px;      
+}
+		
+#contentiPad{
+	top: 380px;
+	width: 100%;
+	height: 1005px;
+}
+	
+.iPadHeadingCon{
+	left: 0 !important;
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+	
+.iPadHeading{
+	margin-left: 37.5px !important;
+}
+	
+.iPadlogoSec{
+	width: 525px;
+}
+	
+.EqLogoSVG{
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 525px;
+	height: 120px;
+}
+	
+.innerVitCol{
+	top: 0;
+	margin: 0;
+	width: 100%;
+}
+	
+.mobMREC, .mobMRECeGot, .MoBanCon{
+	left: 0;
+	margin-left: 37.5px;
+}
+	
+.mobMREC{
+	margin-top: 0;
+}
+	
+.iPhlogoSec{
+	height: 150px;
+}
+	
+.iPhfixed{
+	top: 15px;
+	margin: 6px 0 0 0;
+}
+	
+/* cookie tracking banner style start */
+#cookiePopup {
+	width: 100vw;
+	height: 11vh;
+	margin: 0;
+}
+	
+.navFooter{
+	height: 5vh;
+}
+
+.monFooter{
+	top: -36px;
+	left: 62%;
+}
+		
+}
+	
+@media screen and (max-width: 1440px){
+		
+html{
+	width: 1440px !important;
+}
+		
+body{
+	position: relative;
+	width: 1440px;
+}
+	
+.navHeader{
+	height: 20px;
+}
+	
+.headBtnInner, .headBtn{
+	margin-top: 0;
+	top: 0;
+	height: 16px;
+	line-height: .5em;
+}
+	
+.headBtnInner{
+	top: 0 !important;
+	margin-top: 0 !important;
+	width: 75%;
+}
+		
+.sec1, .sec3{
+	width: 30%;
+	height: 100vh;
+	top: 5vh;
+	left: 0;
+	position: relative;
+	float: left;
+}
+		
+.sec2{
+	width: 40%;
+	height: 100vh;
+	top: 5vh;
+	left: 0;
+	position: relative;
+	float: left;
+}
+
+/* envelopeCon1 and envelopeCon2 outer envelope container */
+.envelopeCon1, .envelopeCon2{
+	display: block;
+	left: 0;
+	margin: 36.7vh 0 0 10px;
+	position: fixed;
+}
+
+.fixedEmail{
+	top: 0 !important;
+	margin: 0 0 0 10px;
+}
+
+#contentEmail{
+	height: 4180px;
+}
+		
+/* iPadCen is container for iPad svg */ 
+.spdiv1440{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	height: 20px;
+}
+
+.iPadCen{
+	position: fixed;
+	top: 0;
+	margin: 20px 0 0 20px;
+	display: block;
+	width: 525px;
+	height: auto;
+}
+		
+.fixediPad{
+	margin: 0 0 0 20px;
+	width: 525px;
+	height: 200px;
+}
+		
+#scrollDIViPad{
+	top: 0;
+	margin: 0;
+	width: 525px;
+	height: 815px !important;      
+}
+		
+#contentiPad{
+	top: 390px;
+	width: 100%;
+	height: auto !important;
+}
+	
+.iPadHeadingCon{
+	left: 0 !important;
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+	
+.iPadHeading{
+	margin-left: 37.5px !important;
+}
+	
+.iPadlogoSec{
+	top: 1.5vh;
+	width: 525px;
+}
+	
+.EqLogoSVG{
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 525px;
+	height: 120px;
+}
+	
+.innerVitCol{
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 390px !important;
+}
+	
+.mobMREC, .mobMRECeGot, .MoBanCon{
+	left: 0;
+	margin-left: 37.5px;
+}
+	
+.mobMREC{
+	margin-top: 0;
+}
+	
+.iPhlogoSec{
+	height: 170px;
+}
+	
+.iPhfixed{
+	top: 15px;
+	margin: 6px 0 0 0;
+}
+
+#iPhScrollDiv{
+	top: 0;
+	margin: 0;
+}
+
+/* type of raise eg Retail - container */
+.RetCon{
+	width: auto;
+	height: auto;
+	padding: 2px 5px;
+	font-weight: 700;
+}
+	
+/* cookie tracking banner style start */
+#cookiePopup {
+	bottom: 3vh !important;
+	width: 100vw;
+	margin: 0;
+	height: 17vh;
+}
+
+.cookie1{
+	height: 15vh;
+}
+	
+.navFooter{
+	height: 4.5vh;
+}
+
+.monFooter, .monMQ{
+	top: -28px;
+	left: 62%;
+	width: 50px !important;
+	height: auto !important;
+}
+		
+}
+
+@media screen and (max-width: 1366px){
+
+	.cenCon{
+		display: none;
+	}
+
+	.SydSec{
+		display: none;
+	}
+	
+	.mqCon{
+		display: block;
+		width: 100%;
+		top: 2vh;
+		left: 0;
+		position: relative;
+		float: left;
+	}
+			
+	html{
+		width: 1366px !important;
+	}
+				
+	body{ 
+		position: absolute;
+		width: 1366px;
+	}
+				
+	.NavThird1, .NavThird3{
+		display: none;
+	}
+				
+	.NavThird2{
+		width: 100%;
+		height: 22px;
+	}
+
+	headBtn{
+		top: 0;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: auto;
+		float: left;
+		height: 22px !important;
+	}
+				
+	.headBtnInner{
+		top: 0;
+		left: 54px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+				
+	.sec1, sec2, .sec3{
+		display: none; 
+	}
+			
+	.email-container table{
+		width: 1366px !important;
+	}   
+				
+	.email-container p{
+		font-size: 2em;
+		line-height: 2.1em;
+	}
+				
+	.emailHeading{
+		font-size: 2.5em !important;
+		line-height: 1.5em !important;
+	}
+				
+	.socQueriesCon{
+		display: none;
+	}
+				
+	center{
+		width: 1366px !important;
+	}   
+				
+	.fixedEmail{
+		top: 0;
+		left: 0;
+		margin: 0;
+		height: 100vh;
+		width: 1366px !important;
+		position: relative;
+		float: left;
+	}
+				
+	#scrollDIVEmail{
+		margin: 0;
+		width: 1366px !important;
+		height: 5000px !important;
+	}
+				
+	#contentEmail{
+		top: 20px;
+		width: 1366px !important;
+		height: 8800px !important;
+		border: none !important;
+	}
+				
+	#NoScroll{
+		width: 1366px !important;
+		height: auto;
+	}
+				
+	/* envelopeCon1 and envelopeCon2 outer envelope container */
+	.envelopeCon1, .envelopeCon2, .envelopeIn1, .envelopeIn2{
+		display: none;
+	}
+	
+	.tabPull{
+		display: none;
+	}
+		
+	.EqLogoPhSVG{
+		display: none;
+	}
+		
+	.iPhbtnSec4{
+		top: 20px;
+		height: auto;
+	}
+				
+	.iPhsvg, .btnMenuCon{
+		display: none;
+	}
+				
+	.iPhlogoSec{
+		display: none;
+	}
+				
+	.EqLogoSVG{
+		margin: 0 0 0 200px;
+		position: relative;
+		width: 500px;
+		height: auto;
+	}
+				
+	#search-bar-div{
+		display: none;
+	}
+		
+	.iPhHeroBanner{
+		width: 1366px;
+		height: auto;
+		margin: 0;
+	}
+		
+	/* QR close popup div */
+	/* QR banner for iPhone start */
+	.qrCon, .qrBanner{
+		display: none;
+	}
+		
+	.paraInfoCon{
+		margin-top: 20px;
+	}
+	
+	.MetricCon{
+		width: 99.5%;
+	}
+	
+	/* MetGrid is Metric container position */
+	.MetGrid {
+		/* padding is padding around the outside of columns */
+		padding: 0 0 38px 518px;
+	}
+				
+	.socQueries{
+		display: none;  
+	}
+		
+	.iPhfixed, iPhsvg{
+		display: block;
+		margin: 0;
+	}
+		
+	.iPhlogoSec{
+		height: 55px;
+	}
+	
+	.Con6{
+		height: 340px !important;
+	}
+	
+	.phslider{
+		width: 1295px;/* width is viewing area on screen for deal cards and slider buttons */
+		height: 340px;
+		margin-left: 37px !important; /* margin controls the button slider position in div*/
+	}
+	
+	.phinner{
+		height: 350px !important;
+	}
+	
+	.phinner1{
+		height: 340px !important;
+	}
+		  
+	.dealCon{
+		padding: 0 !important;
+		width: 220px;
+		height: 340px;
+		margin: 0 40px;
+	}
+	
+	.Con8{
+		height: 315px !important;
+	}
+	
+	.phSlider_1{
+		height: 317px !important;
+	}
+	
+	.phSlider_3{
+		height: 319px !important;
+	}
+			
+	.dealCon2{
+		width: 220px;
+		height: 313px !important;
+		top: 0 !important;
+		margin: 0 40px;
+		background: transparent !important;
+	}
+	
+	/* deal card container styling - deal is outer card container style */
+	.iPhdeal{
+		width: 240px;
+		height: 313px !important;
+		margin: 0 !important;
+		top: 0 !important;
+		padding: 0 !important;
+	}
+		
+	.slidBtnPrev, .slidBtnNext{
+		height: auto;
+		background: transparent;
+		border: none !important;
+	}
+	
+	.next, .prev {
+		width: 26px;
+		font-size: 20px;
+	}
+		
+	.heroH{
+		width: 98%;
+		height: auto;
+	}
+		
+	.heroH:hover{
+		width: 210px !important;
+		height: 115px !important;
+		margin-left: 5px !important;
+		left: 5px;
+	}
+		
+	/* type of raise eg Retail - container */
+	.RetCon{
+		margin: 100px 0 0 -1px;
+		width: auto;
+		height: auto;
+		padding: 2px 5px;
+	}
+		
+	/* type of raise eg Retail - text and button style */
+	.retail{
+		font-size: 15px !important;
+		font-weight: 900;
+		letter-spacing: .5px;
+		color: #6364ff;
+		border-radius: 3px; 
+	}
+		
+	.retail:hover{
+		color: #fff;
+		background-color: #6364ff;
+		border-radius: 3px;
+	}
+		
+	/* brand logo CONTAINER - deal card EXAMPLE */
+	.d1LogCon{
+		margin: 10px 0 0 0;
+		width: 100%;
+		height: 58px;
+	}
+		
+	/* brand logo on deal card EXAMPLE */
+	.d1Logo, .logoQuery{
+		width: 100% !important;
+		height: auto;
+		margin: 0 !important;
+		left: 0 !important;
+	}
+	
+	.logoQuery{
+		width: 210px !important;
+		height: 31px !important;
+		margin: 10px 0 0 20px !important;
+	}
+
+	/* brand's name - title text */
+	.title{ 
+		width: 100%;
+		height: auto;
+		margin: 20px 0 10px 0 !important;
+		letter-spacing: 1.2px;
+		font-weight: 1000;
+		font-size: 20px !important;
+		border-radius: 30px;
+	}
+		
+	/* brand's description text */
+	.des{
+		display: none;
+	}
+		
+	/* counter start */ 
+	.container{  
+		width: 40px;
+		height: 5px;
+		margin: 0;
+		top: 0 !important;
+	}
+		  
+	/* phslider tap slider1 counters style start */
+	.timCond, .timConf, .timConff, .timCons, .timConnh, .timConv, .timConse, .timConsa, .timConp, .timCony, .timContt, .timCondMQ, .timConfMQ, .timConffMQ, .timConsMQ, .timConnhMQ, .timConvMQ, .timConseMQ, .timConsaMQ, .timConpMQ, .timConyMQ, .timConttMQ{  
+		width: 100%;
+		height: auto;
+		margin-top: 0 !important;
+		top: 0 !important;
+		border-radius: 3px;
+	}
+		  
+	/* countdown to deal close heading */
+	#headlined, #headlinef, #headlines, #headlinenh, #headlinev, #headlinese, #headlinesa, #headlinep, #headliney, #headlinett, #headlinedMQ, #headlinefMQ, #headlinesMQ, #headlinenhMQ, #headlinevMQ, #headlineseMQ, #headlinesaMQ, #headlinepMQ, #headlineyMQ, #headlinettMQ{
+		top: 0;
+		margin: 0;
+		font-size: 10px !important;
+		padding: 0 auto;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+		  
+	/* countdown number styling */
+	#daysd, #hoursd, #minutesd, #secondsd, #daysf, #hoursf, #minutesf, #secondsf, #daysff, #hoursff, #minutesff, #secondsff, #dayss, #hourss, #minutess, #secondss, #daysnh, #hoursnh, #minutesnh, #secondsnh, #daysv, #hoursv, #minutesv, #secondsv, #daysse, #hoursse, #minutesse, #secondsse, #dayssa, #hourssa, #minutessa, #secondssa, #daysp, #hoursp, #minutesp, #secondsp, #daysy, #hoursy, #minutesy, #secondsy, #daystt, #hourstt, #minutestt, #secondstt,
+	#daysdMQ, #hoursdMQ, #minutesdMQ, #secondsdMQ, #daysfMQ, #hoursfMQ, #minutesfMQ, #secondsfMQ, #daysffMQ, #hoursffMQ, #minutesffMQ, #secondsffMQ, #dayssMQ, #hourssMQ, #minutessMQ, #secondssMQ, #daysnhMQ, #hoursnhMQ, #minutesnhMQ, #secondsnhMQ, #daysvMQ, #hoursvMQ, #minutesvMQ, #secondsvMQ, #daysseMQ, #hoursseMQ, #minutesseMQ, #secondsseMQ, #dayssaMQ, #hourssaMQ, #minutessaMQ, #secondssaMQ, #dayspMQ, #hourspMQ, #minutespMQ, #secondspMQ, #daysyMQ, #hoursyMQ, #minutesyMQ, #secondsyMQ, #daysttMQ, #hoursttMQ, #minutesttMQ, #secondsttMQ{
+		margin: 10px 0 0 2px;
+		width: 24%;
+		font-size: 20px;
+	}
+		  
+	/* days, hours, minutes, seconds text styling */
+	.daysd, .hoursd, .minutesd, .secondsd, .daysf, .daysff, .hoursf, .minutesf, .secondsf, .dayss, .hourss, .minutess, .secondss, .daysnh, .hoursnh, .minutesnh, .secondsnh, .daysv, .hoursv, .minutesv, .secondsv, .daysse, .hoursse, .minutesse, .secondsse, .dayssa, .hourssa, .minutessa, .secondssa, .daysp, .hoursp, .minutesp, .secondsp, .daysy, .hoursy, .minutesy, .secondsy, .daystt, .hourstt, .minutestt, .secondstt,
+	.daysdMQ, .hoursdMQ, .minutesdMQ, .secondsdMQ, .daysfMQ, .daysffMQ, .hoursfMQ, .minutesfMQ, .secondsfMQ, .dayssMQ, .hourssMQ, .minutessMQ, .secondssMQ, .daysnhMQ, .hoursnhMQ, .minutesnhMQ, .secondsnhMQ, .daysvMQ, .hoursvMQ, .minutesvMQ, .secondsvMQ, .daysseMQ, .hoursseMQ, .minutesseMQ, .secondsseMQ, .dayssaMQ, .hourssaMQ, .minutessaMQ, .secondssaMQ, .dayspMQ, .hourspMQ, .minutespMQ, .secondspMQ, .daysyMQ, .hoursyMQ, .minutesyMQ, .secondsyMQ, .daysttMQ, .hoursttMQ, .minutesttMQ, .secondsttMQ{
+		width: 25%;
+		margin: 2px 0 0 -.5px;
+		font-weight: 600;
+		font-size: 10px;  
+	}
+		
+	/* counter close emojis */
+	li{
+		width: 20%;
+		height: auto;
+		color: #08793E; 
+		display: block;
+		float: left;
+		list-style-type: none;
+		padding: 0 .5px .5px .5px;
+		text-transform: uppercase;
+	}
+		  
+	.dClose{
+		font-weight: 200;
+		font-size: 1.5em;
+	}
+		  
+	.emoDcon, .emoDconMQ{
+		width: 100%;
+		height: 20px;
+		margin: -4px 0 0 0;
+	}
+		  
+	.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt, .emojidMQ, .emojifMQ, .emojiffMQ, .emojisMQ, .emojinhMQ, .emojivMQ, .emojiseMQ, .emojisaMQ, .emojipMQ, .emojiyMQ, .emojittMQ{
+		display: none;
+	}
+		  
+	.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt, .emojidMQ, .emojifMQ, .emojiffMQ, .emojisMQ, .emojinhMQ, .emojivMQ, .emojiseMQ, .emojisaMQ, .emojipMQ, .emojiyMQ, .emojittMQ span{
+		font-size: .5em;
+		padding: 2px;
+	}
+	
+	.SVGcon1, .SVGcon2, .SVGcon3, .SVGcon4, .SVGcon5{
+		width: 700px;
+		margin: 0 !important;
+		top: 0 !important;
+		height: 120px !important;
+		padding: 0 !important;
+	}
+
+	.newscomau, .skyNews, .smartCompany, .AFR, .theAus{
+		top: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.newscomau{
+		left: 27% !important;
+	}
+
+	.skyNews{
+		left: 24.2% !important;
+	}
+
+	.smartCompany{
+		left: 24.3% !important;
+	}
+
+	.AFR{
+		left: 24.3% !important;
+	}
+
+	.theAus{
+		left: 24.3% !important;
+	}
+		
+	.ftBtnCon{
+		width: 1145px;
+		margin-left: 110.5px;
+	}
+	
+	.iPhbtnf1, .iPhbtnf2, .iPhbtnf3, .iPhbtnf4, .iPhbtnf5{
+		left: 14px;
+	}
+	
+	.ph1Social1{
+		margin-left: 410px;
+	}
+		
+	/* cookie tracking banner style start */
+	#cookiePopup{
+		position: fixed;
+		bottom: 0 !important;
+		left: 0;
+		width: 100%;
+		font-size: 2em;
+		height: 215px;
+		background: rgba( 216, 229, 238, 0.25 );
+		backdrop-filter: blur( 4.5px );
+		-webkit-backdrop-filter: blur( 4.5px );
+	}
+		
+	.cookie1, .cookie2, .cookie3{
+		position: relative;
+		align-content: center;
+		float: left;
+		height: 200px;
+	}
+			
+	.cookie1, .cookie3{
+		width: 7.5%;
+	}
+		
+	.acceptCookie{
+		width: auto;
+		height: auto;
+		font-size: 1em;
+	}
+		
+	.cookie2{
+		width: 85%;
+	}
+		
+	.cookieClzOut{
+		top: 15px !important;
+		width: 100%;
+		text-align: center;
+		height: 22px;
+		position: absolute;
+		float: left;
+	}
+			
+	/* cookie close button style */
+	.cookieClzCon{
+		width: 49px;
+		height: 49px;
+		border-radius: 50%;
+		position: relative;
+		text-align: center;
+		line-height: 1.5em;
+		margin: 0 0 0 13px;
+		text-decoration: none;
+	}
+	/* cookie tracking banner style end */
+			
+	.navFooter{
+		display: none;
+	}   
+				
+}  
+
+@media screen and (max-width: 1180px){
+			
+	html{
+		width: 1180px !important;
+	}
+				
+	body{ 
+		position: absolute;
+		width: 1180px;
+	}
+				
+	.NavThird2{
+		width: 100%;
+		height: 5vh !important;
+	}
+				
+	.headBtnInner{
+		left: 45.5px;
+	}
+				
+	.sec1, sec2, .sec3{
+		display: none; 
+	}
+			
+	.email-container table{
+		width: 1180px !important;
+	}   
+				
+	.email-container p{
+		font-size: 2em;
+		line-height: 2.1em;
+	}
+				
+	.emailHeading{
+		font-size: 2.5em !important;
+		line-height: 1.5em !important;
+	}
+				
+	center{
+		width: 1180px !important;
+	}   
+				
+	.fixedEmail{
+		top: 0;
+		left: 0;
+		margin: 0;
+		height: 100vh;
+		width: 1180px !important;
+		position: relative;
+		float: left;
+	}
+				
+	#scrollDIVEmail{
+		margin: 0;
+		width: 1180px !important;
+	}
+				
+	#contentEmail{
+		top: 20px;
+		width: 1180px !important;
+		height: 10000px !important;
+	}
+				
+	#NoScroll{
+		width: 1180px !important;
+		height: auto;
+	}
+
+	.EqLogoSVG{
+		margin: 0 0 0 200px;
+		position: relative;
+		width: 500px;
+		height: auto;
+	}
+
+	.iPhHeroBanner{
+		width: 1180px;
+		height: auto;
+		margin: 0;
+	}
+
+	.paraInfoCon{
+		margin-top: 20px;
+	}
+		
+	.h1Queries{
+		width: 92.8% !important;
+		font-size: 2.1em !important; 
+		line-height: 2em;   
+	}
+				
+	.h2Queries{
+		width: 92.8% !important;
+		font-size: 2em !important;
+	}
+		
+	.pQueries{
+		width: 92.8% !important;
+		font-size: 2em !important;
+		line-height: 2em !important;  
+	}
+		
+	.iPhfixed, iPhsvg{
+		display: block;
+		margin: 0;
+	}
+		
+	.iPhlogoSec{
+		height: 55px;
+	}
+	
+	.Con6{
+		height: 300px !important;
+	}
+	
+	.phslider{
+		width: 1110px !important;/* width is viewing area on screen for deal cards and slider buttons */
+		height: 300px;
+		margin-left: 0 /* margin controls the button slider position in div*/
+	}
+	
+	.phinner{
+		height: 300px !important;
+	}
+	
+	.phinner1{
+		height: 340px !important;
+	}
+		  
+	.dealCon{
+		padding: 0 !important;
+		width: 190px;
+		height: 340px;
+		margin: 0 0 0 53px;
+	}
+	
+	.Con8{
+		height: 262px !important;
+	}
+	
+	.phSlider_1{
+		height: 317px !important;
+	}
+	
+	.phSlider_3{
+		height: 262px !important;
+	}
+			
+	.dealCon2{
+		width: 190px;
+		height: 262px !important;
+		top: 0 !important;
+		margin: 0 0 0 53px;
+		background: transparent !important;
+	}
+	
+	/* deal card container styling - deal is outer card container style */
+	.iPhdeal{
+		width: 200px;
+		height: 313px !important;
+		margin: 0 !important;
+		top: 0 !important;
+		padding: 0 !important;
+	}
+
+	.heroH{
+		width: 98%;
+		height: auto;
+	}
+		
+	.heroH:hover{
+		width: 200px !important;
+		height: 105px !important;
+		margin-left: 5px !important;
+		left: 5px;
+	}
+		
+	/* type of raise eg Retail - container */
+	.RetCon{
+		margin: 80px 0 0 -3px;
+		width: auto;
+		height: auto;
+		padding: 2px 5px;
+	}
+		
+	/* type of raise eg Retail - text and button style */
+	.retail{
+		font-size: 15px !important;
+		font-weight: 900;
+		letter-spacing: .5px;
+		color: #6364ff;
+		border-radius: 3px; 
+	}
+		
+	.retail:hover{
+		color: #fff;
+		background-color: #6364ff;
+		border-radius: 3px;
+	}
+
+	/* brand's name - title text */
+	.title{ 
+		height: auto;
+		margin: 10px 0 !important;
+		line-height: 1em !important;
+		font-size: 20px !important;
+		border-radius: 15px;
+	}
+		
+	/* counter start */ 
+	.container{  
+		width: 40px;
+		height: 5px;
+		margin: 0;
+		top: 0 !important;
+	}
+		  
+	/* phslider tap slider1 counters style start */
+	.timCond, .timConf, .timConff, .timCons, .timConnh, .timConv, .timConse, .timConsa, .timConp, .timCony, .timContt{  
+		width: 100%;
+		height: auto;
+		margin-top: 0 !important;
+		top: 0 !important;
+		border-radius: 3px;
+	}
+		  
+	/* countdown to deal close heading */
+	#headlined, #headlinef, #headlines, #headlinenh, #headlinev, #headlinese, #headlinesa, #headlinep, #headliney, #headlinett{
+		top: 0;
+		margin: 0;
+		font-size: 10px !important;
+		padding: 0 auto;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+		  
+	/* countdown number styling */
+	#daysd, #hoursd, #minutesd, #secondsd, #daysf, #hoursf, #minutesf, #secondsf, #daysff, #hoursff, #minutesff, #secondsff, #dayss, #hourss, #minutess, #secondss, #daysnh, #hoursnh, #minutesnh, #secondsnh, #daysv, #hoursv, #minutesv, #secondsv, #daysse, #hoursse, #minutesse, #secondsse, #dayssa, #hourssa, #minutessa, #secondssa, #daysp, #hoursp, #minutesp, #secondsp, #daysy, #hoursy, #minutesy, #secondsy, #daystt, #hourstt, #minutestt, #secondstt{
+		margin: 10px 0 0 2px;
+		width: 24%;
+		font-size: 20px;
+	}
+		  
+	/* days, hours, minutes, seconds text styling */
+	.daysd, .hoursd, .minutesd, .secondsd, .daysf, .daysf, .hoursf, .minutesf, .secondsf, .dayss, .hourss, .minutess, .secondss, .daysnh, .hoursnh, .minutesnh, .secondsnh, .daysv, .hoursv, .minutesv, .secondsv, .daysse, .hoursse, .minutesse, .secondsse, .dayssa, .hourssa, .minutessa, .secondssa, .daysp, .hoursp, .minutesp, .secondsp, .daysy, .hoursy, .minutesy, .secondsy, .daystt, .hourstt, .minutestt, .secondstt{
+		width: 25%;
+		margin: 2px 0 0 -.5px;
+		font-weight: 600;
+		font-size: 10px;  
+	}
+		
+	/* counter close emojis */
+	li{
+		width: 20%;
+		height: auto;
+		color: #08793E; 
+		display: block;
+		float: left;
+		list-style-type: none;
+		padding: 0 .5px .5px .5px;
+		text-transform: uppercase;
+	}
+		  
+	.dClose{
+		font-weight: 200;
+		font-size: 1.5em;
+	}
+		  
+	.emoDcon{
+		width: 100%;
+		height: 20px;
+		margin: -4px 0 0 0;
+	}
+		  
+	.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt{
+		display: none;
+	}
+		  
+	.emojid, .emojif,.emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt span{
+		font-size: .5em;
+		padding: 2px;
+	}
+	
+	.newscomau{
+		left: 23.5% !important;
+	}
+
+	.skyNews{
+		left: 20.6% !important;
+	}
+
+	.smartCompany{
+		left: 20.7% !important;
+	}
+
+	.AFR{
+		left: 20.7% !important;
+	}
+
+	.theAus{
+		left: 20.7% !important;
+	}
+		
+	.ftBtnCon{
+		width: 1180px !important;
+		margin: auto;
+	}
+	
+	.iPhbtnf1, .iPhbtnf2, .iPhbtnf3, .iPhbtnf4, .iPhbtnf5{
+		left: 14px;
+	}
+	
+	.ph1Social1{
+		margin-left: 410px;
+	}
+		
+	/* cookie tracking banner style start */
+	#cookiePopup{
+		position: fixed;
+		font-size: 2em;
+		height: 210px;
+	}
+	
+	.ftSocCon{
+		top: 0 !important;
+		left: 15px !important;
+		margin: 0 !important;
+	}	
+				
+}  
+
+@media screen and (max-width: 1080px){
+			
+	html{
+		width: 1080px !important;
+	}
+				
+	body{ 
+		position: absolute;
+		width: 1080px;
+	}
+				
+	.NavThird2{
+		width: 100%;
+		height: 5vh !important;
+	}
+			
+	.email-container table{
+		width: 1080px !important;
+	}   
+				
+	.email-container p{
+		font-size: 2.2em;
+		line-height: 2.1em;
+	}
+				
+	.emailHeading{
+		font-size: 2.5em !important;
+		line-height: 1.5em !important;
+	}
+				
+	center{
+		width: 1080px !important;
+	}   
+				
+	.fixedEmail{
+		width: 1080px !important;
+	}
+				
+	#scrollDIVEmail{
+		margin: 0;
+		width: 1080px !important;
+	}
+				
+	#contentEmail{
+		width: 1080px !important;
+	}
+				
+	#NoScroll{
+		width: 1080px !important;
+	}
+
+	.EqLogoSVG{
+		margin: 0 0 0 200px;
+		position: relative;
+		width: 500px;
+		height: auto;
+	}
+
+	.iPhHeroBanner{
+		width: 1080px;
+	}
+	
+	/* MetGrid is Metric container position */
+	.MetGrid {
+		/* padding is padding around the outside of columns */
+		padding: 0 0 38px 375px;
+	}
+		
+	.h1Queries{
+		font-size: 2.7em !important; 
+		line-height: 2em;   
+	}
+				
+	.h2Queries{
+        padding: 10px;
+		font-size: 2.6em !important;
+        line-height: 1.5em; 
+	}
+		
+	.pQueries{
+		font-size: 2.5em !important;
+		line-height: 2em !important;  
+	}
+		
+	.iPhfixed, iPhsvg{
+		display: block;
+		margin: 0;
+	}
+		
+	.iPhlogoSec{
+		height: 55px;
+	}
+	
+	.Con6{
+		height: 300px !important;
+	}
+	
+	.phslider{
+		width: 1015px !important;/* width is viewing area on screen for deal cards and slider buttons */
+		height: 300px;
+		margin-left: 0 /* margin controls the button slider position in div*/
+	}
+	
+	.phinner{
+		height: 300px !important;
+	}
+	
+	.phinner1{
+		height: 340px !important;
+	}
+		  
+	.dealCon{
+		margin: 0 0 0 34.9px;
+	}
+	
+	.Con8{
+		height: 262px !important;
+	}
+	
+	.phSlider_1{
+		height: 317px !important;
+	}
+	
+	.phSlider_3{
+		height: 262px !important;
+	}
+			
+	.dealCon2{
+		margin: 0 0 0 34.9px !important;
+	}
+	
+	/* deal card container styling - deal is outer card container style */
+	.iPhdeal{
+		width: 200px;
+		height: 313px !important;
+		margin: 0 !important;
+		top: 0 !important;
+		padding: 0 !important;
+	}
+
+	.heroH{
+		width: 98%;
+		height: auto;
+	}
+		
+	.heroH:hover{
+		width: 200px !important;
+		height: 105px !important;
+		margin-left: 5px !important;
+		left: 5px;
+	}
+		
+	/* type of raise eg Retail - container */
+	.RetCon{
+		margin: 80px 0 0 -3px;
+		width: auto;
+		height: auto;
+		padding: 2px 5px;
+	}
+		
+	/* type of raise eg Retail - text and button style */
+	.retail{
+		font-size: 15px !important;
+		font-weight: 900;
+		letter-spacing: .5px;
+		color: #6364ff;
+		border-radius: 3px; 
+	}
+		
+	.retail:hover{
+		color: #fff;
+		background-color: #6364ff;
+		border-radius: 3px;
+	}
+
+	/* counter start */ 
+	.container{  
+		width: 40px;
+		height: 5px;
+		margin: 0;
+		top: 0 !important;
+	}
+		  
+	/* phslider tap slider1 counters style start */
+	.timCond, .timConf, .timConff, .timCons, .timConnh, .timConv, .timConse, .timConsa, .timConp, .timCony, .timContt{  
+		width: 100%;
+		height: auto;
+		margin-top: 0 !important;
+		top: 0 !important;
+		border-radius: 3px;
+	}
+		  
+	/* countdown to deal close heading */
+	#headlined, #headlinef, #headlines, #headlinenh, #headlinev, #headlinese, #headlinesa, #headlinep, #headliney, #headlinett{
+		top: 0;
+		margin: 0;
+		font-size: 10px !important;
+		padding: 0 auto;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+		  
+	/* countdown number styling */
+	#daysd, #hoursd, #minutesd, #secondsd, #daysf, #hoursf, #minutesf, #secondsf, #daysff, #hoursff, #minutesff, #secondsff, #dayss, #hourss, #minutess, #secondss, #daysnh, #hoursnh, #minutesnh, #secondsnh, #daysv, #hoursv, #minutesv, #secondsv, #daysse, #hoursse, #minutesse, #secondsse, #dayssa, #hourssa, #minutessa, #secondssa, #daysp, #hoursp, #minutesp, #secondsp, #daysy, #hoursy, #minutesy, #secondsy, #daystt, #hourstt, #minutestt, #secondstt{
+		margin: 10px 0 0 2px;
+		width: 24%;
+		font-size: 20px;
+	}
+		  
+	/* days, hours, minutes, seconds text styling */
+	.daysd, .hoursd, .minutesd, .secondsd, .daysf, .daysf, .hoursf, .minutesf, .secondsf, .dayss, .hourss, .minutess, .secondss, .daysnh, .hoursnh, .minutesnh, .secondsnh, .daysv, .hoursv, .minutesv, .secondsv, .daysse, .hoursse, .minutesse, .secondsse, .dayssa, .hourssa, .minutessa, .secondssa, .daysp, .hoursp, .minutesp, .secondsp, .daysy, .hoursy, .minutesy, .secondsy, .daystt, .hourstt, .minutestt, .secondstt{
+		width: 25%;
+		margin: 2px 0 0 -.5px;
+		font-weight: 600;
+		font-size: 10px;  
+	}
+		
+	/* counter close emojis */
+	li{
+		width: 20%;
+		height: auto;
+		color: #08793E; 
+		display: block;
+		float: left;
+		list-style-type: none;
+		padding: 0 .5px .5px .5px;
+		text-transform: uppercase;
+	}
+		  
+	.dClose{
+		font-weight: 200;
+		font-size: 1.5em;
+	}
+		  
+	.emoDcon{
+		width: 100%;
+		height: 20px;
+		margin: -4px 0 0 0;
+	}
+		  
+	.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt{
+		display: none;
+	}
+		  
+	.emojid, .emojif,.emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt span{
+		font-size: .5em;
+		padding: 2px;
+	}
+
+	.newscomau{
+		left: 19% !important;
+	}
+
+	.skyNews{
+		left: 17.9% !important;
+	}
+
+	.smartCompany{
+		left: 18% !important;
+	}
+
+	.AFR{
+		left: 18% !important;
+	}
+
+	.theAus{
+		left: 18% !important;
+	}
+		
+	.ftBtnCon{
+		width: 1080px !important;
+	}
+	
+	.iPhbtnf1, .iPhbtnf2, .iPhbtnf3, .iPhbtnf4, .iPhbtnf5{
+		left: 14px;
+	}
+	
+	.ph1Social1{
+		margin-left: 350px;
+	}
+		
+	/* cookie tracking banner style start */
+	#cookiePopup{
+		position: fixed;
+		font-size: 2em;
+		height: 210px;
+	}
+	
+	.ftSocCon{
+		top: 0 !important;
+		left: 15px !important;
+		margin: 0 !important;
+	}	
+				
+}  
+
+@media screen and (max-width: 574px){
+			
+	html{
+		width: 574px !important;
+	}
+				
+	body{ 
+		position: absolute;
+		width: 574px;
+	}
+				
+	.NavThird2{
+		width: 574px !important;
+		height: 5vh !important;
+	}
+			
+	.email-container table{
+		width: 574px !important;
+	}   
+				
+	.email-container p{
+		font-size: 2.2em;
+		line-height: 2.1em;
+	}
+				
+	.emailHeading{
+		font-size: 2.5em !important;
+		line-height: 1.5em !important;
+	}
+				
+	center{
+		width: 574px !important;
+	}   
+				
+	.fixedEmail{
+		width: 574px !important;
+	}
+				
+	#scrollDIVEmail{
+		margin: 0;
+		width: 574px !important;
+	}
+				
+	#contentEmail{
+		width: 574px !important;
+	}
+				
+	#NoScroll{
+		width: 574px !important;
+	}
+
+	.EqLogoSVG{
+		margin: 0 0 0 200px;
+		position: relative;
+		width: 500px;
+		height: auto;
+	}
+
+	.iPhHeroBanner{
+		width: 574px !important;
+	}
+		
+	.h1Queries{
+		font-size: 2.7em !important; 
+		line-height: 2em;   
+	}
+				
+	.h2Queries{
+        padding: 10px 0;
+		font-size: 2.6em !important;
+        line-height: 1.5em; 
+	}
+		
+	.pQueries{
+		font-size: 2.5em !important;
+		line-height: 2em !important;  
+	}
+		
+	.iPhfixed, iPhsvg{
+		display: block;
+		margin: 0;
+	}
+		
+	.iPhlogoSec{
+		height: 55px;
+	}
+
+	.slideMQ{
+		width: 100px !important;
+		background: #000;
+		overflow: hidden;
+	}
+	
+	.Con6{
+		height: 300px !important;
+	}
+	
+	.phslider{
+		width: 1015px !important;/* width is viewing area on screen for deal cards and slider buttons */
+		height: 300px;
+		margin-left: 0 /* margin controls the button slider position in div*/
+	}
+	
+	.phinner{
+		margin-left: 0 !important;
+		height: 300px !important;
+		width: auto !important;
+	}
+	
+	.phinner1{
+		height: 340px !important;
+	}
+		  
+	.dealCon{
+		margin: 0 0 0 34.9px;
+	}
+	
+	.Con8{
+		height: 262px !important;
+	}
+	
+	.phSlider_1{
+		height: 317px !important;
+	}
+	
+	.phSlider_3{
+		height: 262px !important;
+	}
+			
+	.dealCon2{
+		margin: 0 0 0 34.9px !important;
+	}
+	
+	/* deal card container styling - deal is outer card container style */
+	.iPhdeal{
+		width: 200px;
+		height: 313px !important;
+		margin: 0 !important;
+		top: 0 !important;
+		padding: 0 !important;
+	}
+
+	.heroH{
+		width: 98%;
+		height: auto;
+	}
+		
+	.heroH:hover{
+		width: 200px !important;
+		height: 105px !important;
+		margin-left: 5px !important;
+		left: 5px;
+	}
+		
+	/* type of raise eg Retail - container */
+	.RetCon{
+		margin: 80px 0 0 -3px;
+		width: auto;
+		height: auto;
+		padding: 2px 5px;
+	}
+		
+	/* type of raise eg Retail - text and button style */
+	.retail{
+		font-size: 15px !important;
+		font-weight: 900;
+		letter-spacing: .5px;
+		color: #6364ff;
+		border-radius: 3px; 
+	}
+		
+	.retail:hover{
+		color: #fff;
+		background-color: #6364ff;
+		border-radius: 3px;
+	}
+
+	/* counter start */ 
+	.container{  
+		width: 40px;
+		height: 5px;
+		margin: 0;
+		top: 0 !important;
+	}
+		  
+	/* phslider tap slider1 counters style start */
+	.timCond, .timConf, .timConff, .timCons, .timConnh, .timConv, .timConse, .timConsa, .timConp, .timCony, .timContt{  
+		width: 100%;
+		height: auto;
+		margin-top: 0 !important;
+		top: 0 !important;
+		border-radius: 3px;
+	}
+		  
+	/* countdown to deal close heading */
+	#headlined, #headlinef, #headlines, #headlinenh, #headlinev, #headlinese, #headlinesa, #headlinep, #headliney, #headlinett{
+		top: 0;
+		margin: 0;
+		font-size: 10px !important;
+		padding: 0 auto;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+		  
+	/* countdown number styling */
+	#daysd, #hoursd, #minutesd, #secondsd, #daysf, #hoursf, #minutesf, #secondsf, #daysff, #hoursff, #minutesff, #secondsff, #dayss, #hourss, #minutess, #secondss, #daysnh, #hoursnh, #minutesnh, #secondsnh, #daysv, #hoursv, #minutesv, #secondsv, #daysse, #hoursse, #minutesse, #secondsse, #dayssa, #hourssa, #minutessa, #secondssa, #daysp, #hoursp, #minutesp, #secondsp, #daysy, #hoursy, #minutesy, #secondsy, #daystt, #hourstt, #minutestt, #secondstt{
+		margin: 10px 0 0 2px;
+		width: 24%;
+		font-size: 20px;
+	}
+		  
+	/* days, hours, minutes, seconds text styling */
+	.daysd, .hoursd, .minutesd, .secondsd, .daysf, .daysf, .hoursf, .minutesf, .secondsf, .dayss, .hourss, .minutess, .secondss, .daysnh, .hoursnh, .minutesnh, .secondsnh, .daysv, .hoursv, .minutesv, .secondsv, .daysse, .hoursse, .minutesse, .secondsse, .dayssa, .hourssa, .minutessa, .secondssa, .daysp, .hoursp, .minutesp, .secondsp, .daysy, .hoursy, .minutesy, .secondsy, .daystt, .hourstt, .minutestt, .secondstt{
+		width: 25%;
+		margin: 2px 0 0 -.5px;
+		font-weight: 600;
+		font-size: 10px;  
+	}
+		
+	/* counter close emojis */
+	li{
+		width: 20%;
+		height: auto;
+		color: #08793E; 
+		display: block;
+		float: left;
+		list-style-type: none;
+		padding: 0 .5px .5px .5px;
+		text-transform: uppercase;
+	}
+		  
+	.dClose{
+		font-weight: 200;
+		font-size: 1.5em;
+	}
+		  
+	.emoDcon{
+		width: 100%;
+		height: 20px;
+		margin: -4px 0 0 0;
+	}
+		  
+	.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt{
+		display: none;
+	}
+		  
+	.emojid, .emojif,.emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt span{
+		font-size: .5em;
+		padding: 2px;
+	}
+
+	#pubSlide{
+		top: 15px !important;
+		left: 0;
+		padding: 0 !important;
+		width: 574px;
+		position: relative;
+		float: left;
+	}
+
+	.newscomau svg{
+		width: 500px !important;
+		left: 0 !important;
+		margin-left: -48px !important;
+	}
+
+	.skyNews svg{
+		width: 500px !important;
+		left: 0 !important;
+		margin-left: -64px !important;
+	}
+
+	.smartCompany svg{
+		width: 500px !important;
+		left: 0 !important;
+		margin-left: -65px !important;
+	}
+
+	.AFR svg{
+		width: 500px !important;
+		left: 0 !important;
+		margin-left: -64px !important;
+	}
+
+	.theAus svg{
+		width: 500px !important;
+		left: 0 !important;
+		margin-left: -64px !important;
+	}
+	
+	/* cookie tracking banner style start */
+	#cookiePopup{
+		position: fixed;
+		font-size: 2em;
+		height: 320px;
+	}
+
+	.cookieClzOut{
+		top: 15px !important;
+		height: 22px;
+	}
+			
+	/* cookie close button style */
+	.cookieClzCon{
+		font-size: 20px !important;
+		width: 28px;
+		height: 28px;
+		line-height: 1.35em;
+		margin: 0 0 0 8px;
+	}
+	
+	.ftBtnCon{
+		width: 574px !important;
+	}
+	
+	.ph1Social1{
+		margin-left: 22.9% !important;
+		padding: 0 !important;
+	}	
+				
+}  
